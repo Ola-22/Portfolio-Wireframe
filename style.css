@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 40px;
+}
+header {
+  height: 400px;
+}
+
+.img-section {
+  height: 264px;
+  object-fit: cover;
+  max-width: 100%;
+}
+header img {
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+section article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f1f1;
+}
+.paragraph {
+  padding-top: 20px;
+  border-bottom: 1px solid #707070;
+  padding-bottom: 40px;
+}
+section article:first-of-type img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.title {
+  font-size: 0.5em;
+  color: #707070;
+}
+
+.job {
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+section article:first-of-type p {
+  font-size: 0.38em;
+  color: #354259;
+  font-weight: 500;
+}
+section article:last-of-type {
+  display: flex;
+  flex-direction: column;
+  flex: 8;
+  align-items: center;
+  padding-top: 60px;
+}
+
+section article:last-of-type span {
+  font-size: 1em;
+  color: #707070;
+  border-bottom: 1px solid #707070;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+section article:last-of-type p {
+  color: #707070;
+  font-size: 0.5em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.container-section {
+  display: flex;
+  padding-top: 40px;
+  row-gap: 20px;
+  column-gap: 50px;
+}
+
+.container-section > div {
+  flex: 1;
+}
+
+@media (max-width: 1200px) {
+  .container-section {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+  section article:last-of-type {
+    flex: 4;
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+  }
+  section article:first-of-type {
+    padding: 20px 0;
+  }
+  header {
+    height: 200px;
+  }
+
+  section article:first-of-type img {
+    width: 100px;
+    height: 100px;
+  }
+
+  section article:last-of-type {
+    padding-top: 20px;
+  }
+
+  section article:last-of-type span {
+    font-size: 0.7em;
+  }
+
+  section article:last-of-type p {
+    font-size: 0.4em;
+  }
+
+  .paragraph {
+    padding-bottom: 20px;
+  }
+}
